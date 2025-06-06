@@ -5,14 +5,17 @@ const services = [
     {
         title: "Construction",
         image: "/images/Construction.png",
+        path: "/services/construction",
     },
     {
         title: "Interior Designing",
         image: "/images/Inerior_design.png",
+        path: "/services/interior-designing",
     },
     {
         title: "Material",
         image: "/images/Material.png",
+        path: "/services/material",
     },
 ];
 
@@ -23,9 +26,10 @@ const Services = () => {
                 <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-bold mb-4 xs:mb-6 md:mb-10">OUR SERVICES</h2>
                 <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4 xs:gap-6 md:gap-8">
                     {services.map((service, idx) => (
-                        <div
+                        <a
                             key={idx}
-                            className="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden"
+                            href={service.path}
+                            className="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden block cursor-pointer"
                         >
                             <img
                                 src={service.image}
@@ -35,11 +39,13 @@ const Services = () => {
                             <div className="p-3 xs:p-4">
                                 <h3 className="text-base xs:text-lg md:text-xl font-semibold text-gray-800">{service.title}</h3>
                             </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
                 {/* Scroll Down Arrow */}
-                
+                <div>
+                    <ScrollArrow />
+                </div>
             </div>
         </section>
     );
