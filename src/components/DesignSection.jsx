@@ -4,7 +4,7 @@ import ScrollArrow from "./Static/ScrollArrow";
 const DesignSection = () => {
     return (
         <section
-            className="py-6 sm:py-8 md:py-12 lg:py-16 px-3 sm:px-4 md:px-6 bg-white"
+            className="py-6 sm:py-8 md:py-12 lg:py-16 px-3 overflow-hidden sm:px-4 md:px-6 bg-white"
             id="projects"
         >
             <div className="max-w-6xl mx-auto">

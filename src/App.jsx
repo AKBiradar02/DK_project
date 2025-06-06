@@ -6,7 +6,8 @@ import DesignSection from "./components/DesignSection";
 import Services from "./components/Services";
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
-import InteriorDesigningPage from "./pages/Interior";
+import InteriorDesigningPage from "./pages/Interior/Interior";
+
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
             }
           />
           {/* Construction Page Route */}
-          <Route path="/services/construction" element={<InteriorDesigningPage />} />
+          <Route path="/services/interior-designing" element={<InteriorDesigningPage />} />
         </Routes>
         <Footer />
       </div>

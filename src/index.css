@@ -1,2 +1,26 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Aoboshi One';
+  src: url('/fonts/AoboshiOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kameron';
+  src: url('/fonts/Kameron-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Julius Sans One';
+  src: url('/fonts/JuliusSansOne.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Hammersmith One';
+  src: url('/fonts/HammersmithOne.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('/fonts/CormorantGaramond.ttf') format('truetype');
+}
