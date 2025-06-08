@@ -8,8 +8,8 @@ const Hero = () => {
             className="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-screen w-full bg-cover overflow-hidden bg-center flex flex-col md:flex-row items-center md:items-stretch pt-[65px] sm:pt-[75px]"
             style={{ backgroundImage: "url('/images/Hero.png')" }}
         >
-            {/* Gradient background with 35% width and full height */}
-            <div className="w-full md:w-[35%] bg-gradient-to-r from-[#5A4D43] to-transparent flex flex-col justify-center px-2 xs:px-4 md:pl-[100px] py-8 md:py-0 z-10 min-h-[calc(60vh-65px)] sm:min-h-[calc(70vh-75px)] md:min-h-[calc(100vh-75px)]">
+            {/* Gradient background with 35% width on desktop */}
+            <div className="w-full md:w-[35%] bg-gradient-to-r from-[#5A4D43] to-transparent flex flex-col justify-center px-4 sm:px-6 md:pl-[100px] py-8 md:py-0 z-10 min-h-[calc(60vh-65px)] sm:min-h-[calc(70vh-75px)] md:min-h-[calc(100vh-75px)]">
                 <div className="text-white font-['Hammersmith_One'] text-center md:text-left">
                     <h1 className="text-[22px] xs:text-[28px] sm:text-[32px] md:text-[56px] lg:text-[60px] leading-tight font-bold mb-4">
                         Lets Make <br className="hidden xs:block" />
@@ -27,8 +27,8 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Scroll Arrow Icon */}
-            <div className="absolute bottom-8 left-320 top-180 transform -translate-x-1/2">
+            {/* Scroll Arrow Icon - positioned responsively */}
+            <div className="absolute bottom-4 left-1/2 md:left-[40%] transform -translate-x-1/2">
                 <ScrollArrow />
             </div>
         </section>

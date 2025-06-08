@@ -1,23 +1,25 @@
 import React from "react";
-import '../index.css'
+import '../index.css';
 
 const AboutUs = () => {
     return (
-        <section id="about" className="bg-white py-16 xs:py-10 sm:py-12 md:py-50 px-2 xs:px-4 md:px-6">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 xs:gap-8 md:gap-12 items-center">
-                {/* Image */}
-                <div>
+        <section id="about" className="bg-white py-10 xs:py-12 sm:py-14 md:py-20 px-4 sm:px-6 md:px-8">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                {/* Image - vertical rectangle */}
+                <div className="flex justify-center">
                     <img
                         src="/images/About.png"
                         alt="Team member"
-                        className="rounded-lg shadow-lg w-full object-cover max-h-[220px] xs:max-h-[300px] md:max-h-[400px]"
+                        className="rounded-lg shadow-lg w-[80%] max-w-[320px] sm:max-w-[380px] md:max-w-[400px] h-[400px] xs:h-[450px] sm:h-[500px] object-cover"
                     />
                 </div>
 
                 {/* Text */}
-                <div>
-                    <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-[Aoboshi One] font-bold mb-2 xs:mb-4 md:mb-6">ABOUT US</h2>
-                    <p className="text-gray-700 text-sm xs:text-base md:text-lg leading-relaxed mb-2 xs:mb-4">
+                <div className="text-center md:text-left">
+                    <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-[Aoboshi One] font-bold mb-4 md:mb-6 text-[#252926]">
+                        ABOUT US
+                    </h2>
+                    <p className="text-gray-700 text-sm xs:text-base md:text-lg leading-relaxed mb-4">
                         Welcome to DK Construction, India's home, where innovation and leadership in the construction and interior industry define us. Our team excels in transforming your life to reflect modern professionalism and a passion for creative spaces. We believe in quality, trust, and a personalized approach to every project, ensuring your vision becomes reality. Our expertise spans construction, interior design, and material solutions, making us your one-stop destination for all your home and workspace needs. Join us as we redefine excellence in the art of exceptional house design with DK.
                     </p>
                     <p className="text-gray-600 text-xs xs:text-sm md:text-base">

@@ -12,15 +12,35 @@
 
 @font-face {
   font-family: 'Julius Sans One';
-  src: url('/fonts/JuliusSansOne.ttf') format('truetype');
+  src: url('/fonts/JuliusSansOne-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Hammersmith One';
-  src: url('/fonts/HammersmithOne.ttf') format('truetype');
+  src: url('/fonts/HammersmithOne-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Cormorant Garamond';
-  src: url('/fonts/CormorantGaramond.ttf') format('truetype');
+  src: url('/fonts/CormorantGaramond-VariableFont-wght.ttf') format('truetype');
+}
+
+.font-hammersmith {
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.font-kameron {
+  font-family: 'Kameron', serif;
+}
+
+.font-julius {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.font-aoboshi {
+  font-family: 'Aoboshi One', serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', serif;
 }

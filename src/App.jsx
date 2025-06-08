@@ -29,7 +29,7 @@ function App() {
             }
           />
           {/* Construction Page Route */}
-          <Route path="/services/Construction" element={<ConstructionHero />} />
+          <Route path="/services/construction" element={<ConstructionHero />} />
           <Route path="/services/interior-designing" element={<InteriorDesigningPage />} />
         </Routes>
         <Footer />

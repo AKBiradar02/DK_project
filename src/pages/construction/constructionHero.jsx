@@ -1,4 +1,3 @@
-// src/pages/Interior/constructionHero.jsx
 
 import React from 'react';
 import SomeOfOurWork from '../../components/SomeOfOurWork'; // <--- Import the SomeOfOurWork component
