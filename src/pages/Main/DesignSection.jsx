@@ -5,7 +5,8 @@ const DesignSection = () => {
     return (
         <section
             id="projects"
-            className="py-8 sm:py-10 md:py-14 lg:py-20 px-3 sm:px-4 md:px-6 lg:px-8 bg-white overflow-hidden"
+            className="relative bg-transparent py-10 xs:py-12 sm:py-14 md:py-20 px-4 sm:px-6 md:px-8 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('/images/bg_hero.png')" }}
         >
             <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 lg:gap-20 items-center">
                 {/* LEFT side images only visible on large screen */}
@@ -78,7 +79,10 @@ const DesignSection = () => {
                 </div>
             </div>
 
-            {/* Scroll Arrow - Removed from here as it's now in Hero.jsx */}
+            {/* Scroll Arrow - Added to the left side */}
+            <div className="hidden lg:block absolute bottom-[-50.5px] left-[40px] xl:left-[calc(50%-600px)] 2xl:left-[calc(50%-650px)] z-20">
+                <ScrollArrow />
+            </div>
         </section>
     );
 };

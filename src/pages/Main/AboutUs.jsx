@@ -3,8 +3,15 @@ import "../../index.css";
 
 const AboutUs = () => {
     return (
-        <section id="about" className="bg-white py-10 xs:py-12 sm:py-14 md:py-20 px-4 sm:px-6 md:px-8">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <section
+            id="about"
+            className="relative bg-transparent py-10 xs:py-12 sm:py-14 md:py-20 px-4 sm:px-6 md:px-8 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('/images/bg_hero.jpg')" }}
+        >
+            {/* Semi-transparent overlay for readability */}
+            <div className="absolute inset-0 bg-white bg-opacity-80 z-0"></div>
+
+            <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                 {/* Image - vertical rectangle */}
                 <div className="flex justify-center">
                     <div className="relative w-fit">
