@@ -24,8 +24,8 @@ const ConstructionHero = () => {
                     {/* Content Container */}
                     <div className="relative z-10 flex items-end justify-start h-full p-8 md:p-16 text-white">
                         <div className="max-w-3xl">
-                            <h1 className="text-5xl md:text-6xl font-bold mb-4">Construction</h1>
-                            <p className="text-lg md:text-xl leading-relaxed">
+                            <h1 className="text-5xl md:text-6xl font-aoboshi mb-4">Construction</h1>
+                            <p className="text-lg md:text-xl font-kameron leading-relaxed">
                                 Our construction services deliver exceptional quality and precision, ensuring your vision comes to life
                                 seamlessly. From foundational work to finishing touches, we handle every aspect with professionalism
                                 and care, creating sturdy, beautiful spaces that stand the test of time.

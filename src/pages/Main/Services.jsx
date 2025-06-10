@@ -43,7 +43,7 @@ const Services = () => {
                                 className="w-full lg:w-full w-[80%] max-w-[320px] sm:max-w-[380px] md:max-w-[500px] h-36 sm:h-44 md:h-[280px] object-cover shadow-[0px_16px_16px_-8px_rgba(12,12,13,0.1),0px_4px_4px_-4px_rgba(12,12,13,0.05)] rounded-[15px] box-border mx-auto lg:mx-0"
                             />
                             <div className="p-3 sm:p-4">
-                                <h3 className="text-base sm:text-lg md:text-xl font-semibold font-[Aoboshi One] text-gray-800">{service.title}</h3>
+                                <h3 className="text-base sm:text-lg md:text-lg font-aoboshi text-gray-800">{service.title}</h3>
                             </div>
                         </Link>
                     ))}

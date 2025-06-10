@@ -24,8 +24,8 @@ const InteriorHero = () => {
                     {/* Content Container */}
                     <div className="relative z-10 flex items-end justify-start h-full p-8 md:p-16 text-white">
                         <div className="max-w-3xl">
-                            <h1 className="text-5xl md:text-6xl font-bold mb-4">Interior Designing</h1>
-                            <p className="text-lg md:text-xl leading-relaxed">
+                            <h1 className="text-5xl md:text-6xl font-aoboshi mb-4">Interior Designing</h1>
+                            <p className="text-lg md:text-xl font-kameron leading-relaxed">
                                 Transform your spaces with our expert interior design services. We blend creativity and functionality, 
                                 tailoring each design to your unique style and needs. Whether modern, classic, or eclectic, 
                                 our designs elevate your living or working environments to new heights of elegance and comfort.

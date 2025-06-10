@@ -27,13 +27,13 @@ const AboutUs = () => {
 
                 {/* Text */}
                 <div className="text-center md:text-left">
-                    <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-[Aoboshi One] font-bold mb-4 md:mb-6 text-[#252926]">
+                    <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-aoboshi font-bold text-[#303231] mb-4 md:mb-6 bg-gradient-to-r from-[#303231] to-[#818F85] text-transparent bg-clip-text underline">
                         ABOUT US
                     </h2>
-                    <p className="text-gray-700 text-sm xs:text-base md:text-lg leading-relaxed mb-4">
+                    <p className="text-gray-700 text-sm xs:text-base font-kameron md:text-lg leading-relaxed mb-4">
                         Welcome to DK Construction, India's home, where innovation and leadership in the construction and interior industry define us. Our team excels in transforming your life to reflect modern professionalism and a passion for creative spaces. We believe in quality, trust, and a personalized approach to every project, ensuring your vision becomes reality. Our expertise spans construction, interior design, and material solutions, making us your one-stop destination for all your home and workspace needs. Join us as we redefine excellence in the art of exceptional house design with DK.
                     </p>
-                    <p className="text-gray-600 text-xs xs:text-sm md:text-base">
+                    <p className="text-gray-600 font-kameron text-xs xs:text-sm md:text-base">
                         Whether it's a new build, a renovation, or just ideas — we make it happen with
                         commitment, creativity, and quality.
                     </p>

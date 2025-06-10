@@ -14,7 +14,11 @@ const WorkInt = () => {
 
 
     <section className="bg-white pt-24 pb-16 px-4 sm:px-6 lg:px-8">
-      <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Some of our Works</h2>
+      <h2 className="text-xl text-center sm:text-3xl md:text-4xl font-aoboshi underline font-semibold text-[#303231] leading-tight mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+                    <span className="bg-gradient-to-r from-[#303231] to-[#818F85] text-transparent bg-clip-text underline">
+                        Some of Our Work
+                    </span>
+                </h2>
 
       <div className="relative flex flex-col md:flex-row justify-center items-center h-auto md:h-96 overflow-visible md:overflow-visible">
         {/* Images with overlapping effect */}

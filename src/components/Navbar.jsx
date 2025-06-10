@@ -1,9 +1,74 @@
 import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { Link } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const handleHomeClick = () => {
+        if (location.pathname !== '/') {
+            navigate('/');
+            setTimeout(() => {
+                const heroSection = document.getElementById('home');
+                if (heroSection) {
+                    heroSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 300);
+        } else {
+            const heroSection = document.getElementById('home');
+            if (heroSection) {
+                heroSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        setMenuOpen(false);
+    };
+
+    const handleServicesClick = () => {
+        if (location.pathname !== '/') {
+            navigate('/');
+            setTimeout(() => {
+                const servicesSection = document.getElementById('services');
+                if (servicesSection) {
+                    servicesSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 300);
+        } else {
+            const servicesSection = document.getElementById('services');
+            if (servicesSection) {
+                servicesSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        setMenuOpen(false);
+    };
+
+    const handleAboutClick = () => {
+        if (location.pathname !== '/') {
+            navigate('/');
+            setTimeout(() => {
+                const aboutSection = document.getElementById('about');
+                if (aboutSection) {
+                    aboutSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 300);
+        } else {
+            const aboutSection = document.getElementById('about');
+            if (aboutSection) {
+                aboutSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        setMenuOpen(false);
+    };
+
+    const handleContactClick = () => {
+        // Open WhatsApp link in a new tab
+        const whatsappNumber = "+1234567890"; // Replace with your actual WhatsApp number
+        const message = "Hello, I would like to contact you";
+        const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappLink, '_blank');
+        setMenuOpen(false);
+    };
 
     return (
         <header className="w-full bg-white shadow-md fixed top-0 z-50">
@@ -19,30 +84,28 @@ const Navbar = () => {
                 ></div>
 
                 {/* Desktop Nav */}
-                <nav className="hidden lg:flex absolute left-[65%] top-[20px] md:top-[31px] transform -translate-x-1/2 font-julius-sans-one text-[14px] sm:text-[16px] md:text-[20px] leading-[22px] text-[#252926] space-x-4 md:space-x-6">
-                    <ScrollLink to="home" smooth={true} duration={500} className="cursor-pointer hover:text-red-600">
+                <nav className="hidden lg:flex absolute left-[65%] top-[20px] md:top-[31px] transform -translate-x-1/2 font-julius text-[14px] sm:text-[16px] md:text-[20px] leading-[22px] text-[#252926] space-x-4 md:space-x-6">
+                    <button onClick={handleHomeClick} className="cursor-pointer hover:text-red-600">
                         Home
-                    </ScrollLink>
-                    <ScrollLink to="services" smooth={true} duration={500} className="cursor-pointer hover:text-red-600">
+                    </button>
+                    <button onClick={handleServicesClick} className="cursor-pointer hover:text-red-600">
                         Services
-                    </ScrollLink>
-                    <ScrollLink to="about" smooth={true} duration={500} className="cursor-pointer hover:text-red-600">
+                    </button>
+                    <button onClick={handleAboutClick} className="cursor-pointer hover:text-red-600">
                         About Us
-                    </ScrollLink>
-                    <ScrollLink to="contact" smooth={true} duration={500} className="cursor-pointer hover:text-red-600">
+                    </button>
+                    <button onClick={handleContactClick} className="cursor-pointer hover:text-red-600">
                         Contact Us
-                    </ScrollLink>
+                    </button>
                 </nav>
 
                 {/* Desktop Button */}
-                <ScrollLink
-                    to="contact"
-                    smooth={true}
-                    duration={500}
-                    className="hidden lg:flex absolute left-[80%] top-[18px] md:top-[23px] ml-[20px] md:ml-[30px] w-[80px] h-[30px] md:w-[113px] md:h-[34px] bg-[#CDB7A7] shadow items-center justify-center text-center text-[#252926] font-julius-sans-one font-semibold text-[13px] md:text-[16px] leading-[19px] hover:text-red-600 transition rounded cursor-pointer"
+                <button
+                    onClick={handleContactClick}
+                    className="hidden lg:flex absolute left-[80%] top-[18px] md:top-[23px] ml-[20px] md:ml-[30px] w-[80px] h-[30px] md:w-[113px] md:h-[34px] bg-[#CDB7A7] shadow items-center justify-center text-center text-[#252926] font-julius font-semibold text-[13px] md:text-[16px] leading-[19px] hover:text-red-600 transition rounded cursor-pointer"
                 >
                     SIGN UP
-                </ScrollLink>
+                </button>
 
                 {/* Hamburger */}
                 <div className="lg:hidden absolute right-4 top-4 z-50">
@@ -63,11 +126,11 @@ const Navbar = () => {
                     <div className="absolute inset-0 bg-black bg-opacity-40" onClick={() => setMenuOpen(false)}></div>
                     <div className="absolute top-[65px] sm:top-[75px] left-0 w-full bg-white shadow-lg animate-fade-in">
                         <nav className="flex flex-col items-center py-4 space-y-2">
-                            <ScrollLink to="home" smooth={true} duration={500} onClick={() => setMenuOpen(false)} className="w-full text-center py-2 hover:text-red-600 cursor-pointer">Home</ScrollLink>
-                            <ScrollLink to="services" smooth={true} duration={500} onClick={() => setMenuOpen(false)} className="w-full text-center py-2 hover:text-red-600 cursor-pointer">Services</ScrollLink>
-                            <ScrollLink to="about" smooth={true} duration={500} onClick={() => setMenuOpen(false)} className="w-full text-center py-2 hover:text-red-600 cursor-pointer">About Us</ScrollLink>
-                            <ScrollLink to="contact" smooth={true} duration={500} onClick={() => setMenuOpen(false)} className="w-full text-center py-2 hover:text-red-600 cursor-pointer">Contact Us</ScrollLink>
-                            <ScrollLink to="contact" smooth={true} duration={500} onClick={() => setMenuOpen(false)} className="mt-2 px-4 py-2 bg-[#CDB7A7] text-[#252926] font-semibold rounded shadow hover:text-red-600 cursor-pointer">SIGN UP</ScrollLink>
+                            <button onClick={handleHomeClick} className="w-full text-center py-2 hover:text-red-600 cursor-pointer">Home</button>
+                            <button onClick={handleServicesClick} className="w-full text-center py-2 hover:text-red-600 cursor-pointer">Services</button>
+                            <button onClick={handleAboutClick} className="w-full text-center py-2 hover:text-red-600 cursor-pointer">About Us</button>
+                            <button onClick={handleContactClick} className="w-full text-center py-2 hover:text-red-600 cursor-pointer">Contact Us</button>
+                            <button onClick={handleContactClick} className="mt-2 px-4 py-2 bg-[#CDB7A7] text-[#252926] font-semibold rounded shadow hover:text-red-600 cursor-pointer">SIGN UP</button>
                         </nav>
                     </div>
                 </div>
