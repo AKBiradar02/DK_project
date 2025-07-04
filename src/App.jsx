@@ -14,25 +14,27 @@ import ConstructionHero from "./pages/construction/constructionHero";
 
 function App() {
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <>
-            <Navbar />
-            <Hero />
-            <DesignSection />
-            <Services />
-            <AboutUs />
-            <Footer />
-          </>
-        }
-      />
-      <Route path="/construction" element={<ConstructionHero />} />
-      <Route path="/interior" element={<InteriorHero />} />
-      <Route path="/material" element={<MaterialH />} />
+    <div className="container-constraints">
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Hero />
+              <DesignSection />
+              <Services />
+              <AboutUs />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/construction" element={<ConstructionHero />} />
+        <Route path="/interior" element={<InteriorHero />} />
+        <Route path="/material" element={<MaterialH />} />
 
-    </Routes>
+      </Routes>
+    </div>
   );
 }
 
