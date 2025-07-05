@@ -36,7 +36,7 @@ const DesignSection = () => {
 
                 {/* RIGHT text */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center pt-6 sm:pt-8 md:pt-12 lg:pt-1">
-                    <h2 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-3xl
+                    <h2 className="text-lg xs:text-xl sm:text-3xl md:text-3xl lg:text-3xl
                                 font-poppins font-semibold text-[#303231] leading-tight mb-6">
 
                         <span className="bg-gradient-to-r from-[#303231] to-[#818F85]

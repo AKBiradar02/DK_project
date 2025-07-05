@@ -87,9 +87,9 @@ const Navbar = () => {
 
 
                 {/* Desktop Nav */}
-                <nav className="hidden lg:flex absolute left-[65%] top-[20px] md:top-[31px]
-                                    transform -translate-x-1/2 font-poppins font-semibold text-[14px]
-                                    sm:text-[16px] md:text-[20px] leading-[22px] text-[#252926] space-x-4 md:space-x-6">
+                <nav className="hidden lg:flex absolute left-[65%] top-20 md:top-8
+                                    transform -translate-x-1/2 font-poppins font-semibold text-lg
+                                    sm:text-xl md:text-base leading-[22px] text-[#252926] space-x-4 md:space-x-6">
                     <button onClick={handleHomeClick} className="cursor-pointer hover:text-red-600">
                         Home
                     </button>
