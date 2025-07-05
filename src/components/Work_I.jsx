@@ -42,7 +42,7 @@ const WorkInt = () => {
       <Navbar />
 
       <section className="bg-white pt-12 pb-16 px-4 sm:px-6 lg:px-8">
-        <h2 className="text-xl text-center sm:text-3xl md:text-4xl font-poppins font-semibold text-[#303231] leading-tight mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+        <h2 className="text-xl text-center sm:text-3xl md:text-3xl font-poppins font-semibold text-[#303231] leading-tight mb-6 sm:mb-8 md:mb-10 lg:mb-12">
           <span className="bg-gradient-to-r from-[#303231] to-[#818F85] text-transparent bg-clip-text underline">
             Some of Our Work
           </span>

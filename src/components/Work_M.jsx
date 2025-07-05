@@ -39,7 +39,7 @@ const WorkMat = () => {
     return (
         <section className="bg-white pt-18 pb-16 px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl xs:text-3xl sm:text-4xl
-                        md:text-4xl font-poppins font-bold text-[#303231]
+                        md:text-3xl font-poppins font-bold text-[#303231]
                         leading-tight mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-center">
                 <span className="bg-gradient-to-r
                 from-[#303231] to-[#818F85] text-transparent

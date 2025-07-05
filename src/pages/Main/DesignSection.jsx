@@ -14,7 +14,7 @@ const DesignSection = () => {
 
                 {/* LEFT images */}
                 <div className="hidden lg:flex flex-col items-start w-1/2 gap-8 pt-4">
-                    <div className="relative w-fit -ml-16">
+                    <div className="relative w-fit -ml-5">
                         <div className="absolute -top-5 -left-5 w-32 h-32 border-2 border-[#AF8C53] z-0 rounded-md"></div>
                         <img
                             src="/images/DH1.png"
@@ -23,7 +23,7 @@ const DesignSection = () => {
                         />
                     </div>
 
-                    <div className="relative w-fit ml-16">
+                    <div className="relative w-fit ml-35">
                         <div className="absolute -top-5 left-[300px] w-32 h-32 border-2 border-[#AF8C53] z-0 rounded-md"></div>
                         <div className="absolute -bottom-5 -left-5 w-32 h-32 border-2 border-[#AF8C53] z-0 rounded-md"></div>
                         <img

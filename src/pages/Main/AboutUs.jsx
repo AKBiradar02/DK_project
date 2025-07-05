@@ -14,7 +14,7 @@ const AboutUs = () => {
             <div className="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 grid
                             grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
 
-                <div className="flex justify-center">
+                <div className="flex justify-center ml-10 md:ml-0">
 
                     <div className="relative w-fit">
                         <div className="absolute -top-5 -left-5 w-28 sm:w-32 md:w-36

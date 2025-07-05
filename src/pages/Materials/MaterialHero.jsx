@@ -24,8 +24,8 @@ const MaterialH = () => {
                     {/* Content Container */}
                     <div className="relative z-10 flex items-end justify-start h-full p-8 md:p-16 text-white">
                         <div className="max-w-3xl">
-                            <h1 className="text-5xl md:text-6xl font-poppins font-semibold mb-4">Materials</h1>
-                            <p className="text-lg md:text-xl font-roboto leading-relaxed">
+                            <h1 className="text-5xl md:text-5xl font-poppins font-semibold mb-4">Materials</h1>
+                            <p className="text-lg md:text-lg font-roboto leading-relaxed">
                                 Our selection of premium materials guarantees durability and aesthetic appeal.
                                 We source the finest products, ensuring each element of your space is crafted with excellence.
                                 From flooring to fixtures, our materials enhance the overall beauty and longevity of your interiors.
