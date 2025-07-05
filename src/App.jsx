@@ -10,29 +10,30 @@ import InteriorHero from "./pages/Interior/InteriorHero";
 import MaterialH from "./pages/Materials/MaterialHero"
 import ConstructionHero from "./pages/construction/constructionHero";
 
-
-
 function App() {
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <>
-            <Navbar />
-            <Hero />
-            <DesignSection />
-            <Services />
-            <AboutUs />
-            <Footer />
-          </>
-        }
-      />
-      <Route path="/construction" element={<ConstructionHero />} />
-      <Route path="/interior" element={<InteriorHero />} />
-      <Route path="/material" element={<MaterialH />} />
-
-    </Routes>
+    <div className="max-w-screen overflow-x-hidden">
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <div className="container mx-auto px-4">
+                <Hero />
+                <DesignSection />
+                <Services />
+                <AboutUs />
+              </div>
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/construction" element={<ConstructionHero />} />
+        <Route path="/interior" element={<InteriorHero />} />
+        <Route path="/material" element={<MaterialH />} />
+      </Routes>
+    </div>
   );
 }
 

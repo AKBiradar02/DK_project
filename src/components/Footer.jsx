@@ -3,7 +3,7 @@ import { FaFacebookSquare, FaInstagram, FaWhatsappSquare } from "react-icons/fa"
 
 const Footer = () => {
   return (
-    <footer className="bg-[#252926] text-white font-cormorant py-4 xs:py-6 md:py-8 mt-12 w-full">
+    <footer className="bg-[#252926] text-white font-poppins font-semibold py-4 xs:py-6 md:py-8 mt-12 w-full">
       <div className="max-w-6xl mx-auto flex flex-col items-center px-4 xs:px-6">
         {/* Social Icons */}
         <div className="flex flex-wrap justify-center gap-4 mb-3 xs:mb-4">

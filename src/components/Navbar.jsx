@@ -72,19 +72,24 @@ const Navbar = () => {
 
     return (
         <header className="w-full bg-white shadow-md fixed top-0 z-50">
-            <div className="relative w-full h-[65px] sm:h-[75px] bg-gradient-to-r from-[rgba(205,183,167,0.63)] to-[rgba(255,255,255,0.63)] shadow-[0_16px_32px_rgba(12,12,13,0.4)] px-2 sm:px-4">
+            <div className="relative w-full h-[65px] sm:h-[75px] 
+            bg-gradient-to-r from-[rgba(205,183,167,0.63)] to-[rgba(255,255,255,0.63)] shadow-[0_16px_32px_rgba(12,12,13,0.4)] 
+            px-2 sm:px-4">
                 {/* Logos */}
                 <div
-                    className="absolute w-[40px] h-[45px] left-2 top-2 bg-no-repeat bg-contain sm:w-[60px] sm:h-[70px] sm:left-4 sm:top-2 md:w-[81px] md:h-[100px] md:left-[120px] md:top-[1px]"
+                    className="absolute w-[80px] h-[83px] left-[30px] top-[6px] bg-no-repeat bg-contain"
                     style={{ backgroundImage: "url('/images/group1.png')" }}
                 ></div>
                 <div
-                    className="absolute w-[55px] h-[30px] left-12 top-7 bg-no-repeat bg-contain sm:w-[80px] sm:h-[50px] sm:left-20 sm:top-8 md:w-[125px] md:h-[80px] md:left-[190px] md:top-[35px]"
+                    className="absolute w-[156px] h-[34px] left-[100px] top-[30px] bg-no-repeat bg-contain"
                     style={{ backgroundImage: "url('/images/CAI.png')" }}
                 ></div>
 
+
                 {/* Desktop Nav */}
-                <nav className="hidden lg:flex absolute left-[65%] top-[20px] md:top-[31px] transform -translate-x-1/2 font-julius text-[14px] sm:text-[16px] md:text-[20px] leading-[22px] text-[#252926] space-x-4 md:space-x-6">
+                <nav className="hidden lg:flex absolute left-[65%] top-[20px] md:top-[31px]
+                                    transform -translate-x-1/2 font-poppins font-semibold text-[14px]
+                                    sm:text-[16px] md:text-[20px] leading-[22px] text-[#252926] space-x-4 md:space-x-6">
                     <button onClick={handleHomeClick} className="cursor-pointer hover:text-red-600">
                         Home
                     </button>
@@ -102,7 +107,11 @@ const Navbar = () => {
                 {/* Desktop Button */}
                 <button
                     onClick={handleContactClick}
-                    className="hidden lg:flex absolute left-[80%] top-[18px] md:top-[23px] ml-[20px] md:ml-[30px] w-[80px] h-[30px] md:w-[113px] md:h-[34px] bg-[#CDB7A7] shadow items-center justify-center text-center text-[#252926] font-julius font-semibold text-[13px] md:text-[16px] leading-[19px] hover:text-red-600 transition rounded cursor-pointer"
+                    className="hidden lg:flex absolute left-[80%] top-[18px] md:top-[23px]
+                                ml-[20px] md:ml-[30px] w-[80px] h-[30px] md:w-[113px] md:h-[34px] bg-[#CDB7A7]
+                                shadow items-center justify-center text-center text-[#252926]
+                                font-roboto font-bold font-semibold text-[13px] md:text-[16px] leading-[19px]
+                                hover:text-red-600 transition rounded cursor-pointer"
                 >
                     SIGN UP
                 </button>
@@ -124,7 +133,8 @@ const Navbar = () => {
             {menuOpen && (
                 <div className="lg:hidden fixed inset-0 z-40">
                     <div className="absolute inset-0 bg-black bg-opacity-40" onClick={() => setMenuOpen(false)}></div>
-                    <div className="absolute top-[65px] sm:top-[75px] left-0 w-full bg-white shadow-lg animate-fade-in">
+                    <div className="absolute top-[65px] sm:top-[75px] left-0 w-full bg-white
+                                    shadow-lg animate-fade-in">
                         <nav className="flex flex-col items-center py-4 space-y-2">
                             <button onClick={handleHomeClick} className="w-full text-center py-2 hover:text-red-600 cursor-pointer">Home</button>
                             <button onClick={handleServicesClick} className="w-full text-center py-2 hover:text-red-600 cursor-pointer">Services</button>
