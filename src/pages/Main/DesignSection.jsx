@@ -24,7 +24,7 @@ const DesignSection = () => {
                     </div>
 
                     <div className="relative w-fit ml-35">
-                        <div className="absolute -top-5 left-[300px] w-32 h-32 border-2 border-[#AF8C53] z-0 rounded-md"></div>
+                        <div className="absolute -top-5 left-[320px] w-32 h-32 border-2 border-[#AF8C53] z-0 rounded-md"></div>
                         <div className="absolute -bottom-5 -left-5 w-32 h-32 border-2 border-[#AF8C53] z-0 rounded-md"></div>
                         <img
                             src="/images/DH2.png"
@@ -47,7 +47,7 @@ const DesignSection = () => {
 
                     {/* Mobile images */}
                     <div className="relative w-fit my-4 lg:hidden">
-                        <div className="absolute -top-5 -left-5 w-32 h-32 border-2 border-[#AF8C53] z-0 rounded-md"></div>
+                        <div className="absolute -top-5 -left-2 w-32 h-32 border-2 border-[#AF8C53] z-0 rounded-md"></div>
                         <img
                             src="/images/DH1.png"
                             alt="Dream House"
@@ -62,7 +62,7 @@ const DesignSection = () => {
                     </p>
 
                     <div className="relative w-fit my-4 lg:hidden">
-                        <div className="absolute -top-5 -left-5 w-32 h-32 border-2 border-[#AF8C53] z-0 rounded-md"></div>
+                        <div className="absolute -top-5 -left-2 w-32 h-32 border-2 border-[#AF8C53] z-0 rounded-md"></div>
                         <img
                             src="/images/DH2.png"
                             alt="Interior Design"

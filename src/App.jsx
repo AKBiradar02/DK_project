@@ -19,7 +19,7 @@ function App() {
           element={
             <>
               <Navbar />
-              <div className="container mx-auto px-4">
+              <div className="w-full">
                 <Hero />
                 <DesignSection />
                 <Services />

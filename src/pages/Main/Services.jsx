@@ -24,7 +24,7 @@ const services = [
 const Services = () => {
     return (
         <section id="services" className="relative bg-transparent py-10 xs:py-12 sm:py-14
-                                            md:py-20 bg-cover bg-center bg-no-repeat">
+                                            md:py-30 bg-cover bg-center bg-no-repeat">
 
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 text-center relative">
 
@@ -50,7 +50,7 @@ const Services = () => {
                     ))}
                 </div>
 
-                <div className="hidden lg:block absolute bottom-[-130.5px] right-[40px] xl:right-[calc(50%-600px)] 2xl:right-[calc(50%-650px)] z-20">
+                <div className="hidden lg:block absolute bottom-[-200.5px] right-[40px] xl:right-[calc(50%-600px)] 2xl:right-[calc(50%-650px)] z-20">
                     <ScrollArrow />
                 </div>
             </div>

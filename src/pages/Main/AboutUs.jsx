@@ -6,7 +6,7 @@ const AboutUs = () => {
         <section
             id="about"
             className="relative bg-transparent py-10 xs:py-12
-            sm:py-14 md:py-20 bg-cover bg-center bg-no-repeat"
+            sm:py-14 md:py-30 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: "url('/images/bg_hero.jpg')" }}
         >
             <div className="absolute inset-0 bg-white bg-opacity-80 z-0"></div>
