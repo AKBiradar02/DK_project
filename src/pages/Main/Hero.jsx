@@ -5,14 +5,15 @@ const Hero = () => {
     return (
         <section
             id="home"
-            className="relative h-screen w-full bg-cover bg-center flex items-center pt-[45px] sm:pt-[75px] md:pt-[10px]"
+            className="relative h-screen w-full bg-cover bg-center flex items-center pt-[45px]
+                        sm:pt-[75px] md:pt-[10px]"
             style={{ backgroundImage: "url('/images/Hero.png')" }}
         >
             {/* ✅ Gradient overlay fixed on left */}
             <div className="absolute top-0 left-0 w-[40%] h-full bg-gradient-to-r from-[#5A4D43] to-transparent z-0" />
 
             {/* ✅ Text content — separate, positioned on top */}
-            <div className="relative z-10 w-full px-4 sm:px-6 md:px-10 lg:px-20 max-w-[400px]">
+            <div className="relative z-10 w-full px-4 sm:px-6 md:px-10 lg:px-15 max-w-[350px] lg:ml-30 lg:mt-25">
                 <h1 className="text-white font-poppins font-semibold text-left text-[40px] xs:text-[44px]
                                         sm:text-[48px] md:text-[56px] lg:text-[40px] leading-tight mb-4">
                     Lets Make your <br className="block sm:hidden" />
