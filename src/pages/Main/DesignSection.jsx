@@ -73,7 +73,7 @@ const DesignSection = () => {
                     <button className="bg-gradient-to-r from-[#303231] to-[#818F85] font-poppins font-semibold
                                     text-white px-6 py-2.5 shadow-lg text-lg md:text-lg
                                     rounded hover:opacity-90 transition duration-300">
-                        BOOK FREE CONSULTATION
+                        BOOK CONSULTATION
                     </button>
                 </div>
             </div>

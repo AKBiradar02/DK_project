@@ -7,6 +7,7 @@ import Services from "./pages/Main/Services";
 import AboutUs from "./pages/Main/AboutUs";
 import Footer from "./components/Footer";
 import InteriorHero from "./pages/Interior/InteriorHero";
+import ContactForm from "./components/ContactForm";
 import MaterialH from "./pages/Materials/MaterialHero"
 import ConstructionHero from "./pages/construction/constructionHero";
 
@@ -33,6 +34,9 @@ function App() {
         <Route path="/interior" element={<InteriorHero />} />
         <Route path="/material" element={<MaterialH />} />
       </Routes>
+      <div id="contactForm">
+        <ContactForm />
+      </div>
     </div>
   );
 }
