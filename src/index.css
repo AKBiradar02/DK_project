@@ -37,7 +37,7 @@ body, html {
 
 @font-face {
   font-family: 'Cormorant Garamond';
-  src: url('/fonts/CormorantGaramond-VariableFont-wght.ttf') format('truetype');
+  src: url('/fonts/CormorantGaramond-VariableFont_wght.ttf') format('truetype');
 }
 
 .font-hammersmith {
