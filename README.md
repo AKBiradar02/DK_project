@@ -101,3 +101,18 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Recent Improvements
+
+- Refactored service pages into a shared `ServicePage` template powered by `src/data/servicePages.js` for easier future expansion.
+- Added a fallback 404 page for invalid routes.
+- Improved the contact modal by removing lint issues, adding Escape-to-close support, and making WhatsApp recipient configurable via `VITE_WHATSAPP_NUMBER`.
+
+### Environment Variables
+
+Create a `.env` file to configure WhatsApp submissions:
+
+```bash
+VITE_WHATSAPP_NUMBER=919421790402
+```
+

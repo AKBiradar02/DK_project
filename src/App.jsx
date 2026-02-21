@@ -6,10 +6,10 @@ import DesignSection from "./pages/Main/DesignSection";
 import Services from "./pages/Main/Services";
 import AboutUs from "./pages/Main/AboutUs";
 import Footer from "./components/Footer";
-import InteriorHero from "./pages/Interior/InteriorHero";
 import ContactForm from "./components/ContactForm";
-import MaterialH from "./pages/Materials/MaterialHero"
-import ConstructionHero from "./pages/construction/constructionHero";
+import ServicePage from "./pages/ServicePage";
+import NotFound from "./pages/NotFound";
+import { servicePages } from "./data/servicePages";
 
 function App() {
   return (
@@ -30,13 +30,19 @@ function App() {
             </>
           }
         />
-        <Route path="/construction" element={<ConstructionHero />} />
-        <Route path="/interior" element={<InteriorHero />} />
-        <Route path="/material" element={<MaterialH />} />
+
+        {Object.entries(servicePages).map(([path, page]) => (
+          <Route
+            key={path}
+            path={`/${path}`}
+            element={<ServicePage {...page} />}
+          />
+        ))}
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
-      <div id="contactForm">
-        <ContactForm />
-      </div>
+
+      <ContactForm />
     </div>
   );
 }
