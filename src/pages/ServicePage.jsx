@@ -8,11 +8,12 @@ const ServicePage = ({ title, description, heroImage, heroAlt, WorkComponent }) 
   return (
     <>
       <Navbar />
-      <section>
-        <div className="relative w-full h-screen overflow-hidden">
+
+      <main>
+        <section className="relative w-full h-screen overflow-hidden">
           <img
             src={heroImage}
-            alt={heroAlt}
+            alt={heroAlt || `${title} hero image`}
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
 
@@ -25,11 +26,12 @@ const ServicePage = ({ title, description, heroImage, heroAlt, WorkComponent }) 
               <p className="text-lg md:text-lg font-roboto leading-relaxed">{description}</p>
             </div>
           </div>
-        </div>
+        </section>
 
-        <WorkSection />
-        <Footer />
-      </section>
+        {WorkSection ? <WorkSection /> : null}
+      </main>
+
+      <Footer />
     </>
   );
 };
