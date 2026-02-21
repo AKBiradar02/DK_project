@@ -3,11 +3,18 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const ServicePage = ({ title, description, heroImage, heroAlt, WorkComponent }) => {
+  const WorkSection = WorkComponent;
   const workSection = React.createElement(WorkComponent);
 
   return (
     <>
       <Navbar />
+
+      <main>
+        <section className="relative w-full h-screen overflow-hidden">
+          <img
+            src={heroImage}
+            alt={heroAlt || `${title} hero image`}
       <section>
         <div className="relative w-full h-screen overflow-hidden">
           <img
@@ -25,6 +32,12 @@ const ServicePage = ({ title, description, heroImage, heroAlt, WorkComponent }) 
               <p className="text-lg md:text-lg font-roboto leading-relaxed">{description}</p>
             </div>
           </div>
+        </section>
+
+        {WorkSection ? <WorkSection /> : null}
+      </main>
+
+      <Footer />
         </div>
 
         {workSection}
