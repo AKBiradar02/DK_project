@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 
 const ServicePage = ({ title, description, heroImage, heroAlt, WorkComponent }) => {
   const WorkSection = WorkComponent;
+  const workSection = React.createElement(WorkComponent);
 
   return (
     <>
@@ -14,6 +15,11 @@ const ServicePage = ({ title, description, heroImage, heroAlt, WorkComponent }) 
           <img
             src={heroImage}
             alt={heroAlt || `${title} hero image`}
+      <section>
+        <div className="relative w-full h-screen overflow-hidden">
+          <img
+            src={heroImage}
+            alt={heroAlt}
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
 
@@ -32,6 +38,11 @@ const ServicePage = ({ title, description, heroImage, heroAlt, WorkComponent }) 
       </main>
 
       <Footer />
+        </div>
+
+        {workSection}
+        <Footer />
+      </section>
     </>
   );
 };
